@@ -1,0 +1,28 @@
+# Frontend dependencies and build files
+
+frontend/node_modules/
+frontend/dist/
+
+# Java and Maven build files
+
+backend/target/
+
+# Local H2 database
+
+backend/data/
+*.mv.db
+*.trace.db
+
+# Environment variables
+
+.env
+.env.*
+!.env.example
+
+# IDE files
+
+.idea/
+.vscode/
+.classpath
+.project
+.settings/
