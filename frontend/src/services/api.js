@@ -1,7 +1,9 @@
 import axios from 'axios';
 
-// Base API configuration connecting to Spring Boot backend
-const API_BASE_URL = 'http://localhost:8080/api';
+// Use the deployed backend URL when provided by Vercel.
+// Fall back to localhost for local development.
+const API_BASE_URL = `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080'}/api`;
+
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
