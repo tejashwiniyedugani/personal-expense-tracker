@@ -1,4 +1,4 @@
-```java
+
 package com.example.app.config;
 
 import org.springframework.context.annotation.Configuration;
@@ -16,11 +16,10 @@ public class CorsConfig implements WebMvcConfigurer {
                         "http://127.0.0.1:5173",
                         "http://localhost:3000",
                         "http://127.0.0.1:3000",
-                        "https://personal-expense-tracker-sepia.vercel.app"
-                )
+                        "https://personal-expense-tracker-sepia.vercel.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH")
                 .allowedHeaders("*")
                 .allowCredentials(false)
                 .maxAge(3600);
     }
-}```
+}
